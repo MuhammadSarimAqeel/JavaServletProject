@@ -367,6 +367,21 @@ session.removeAttribute("msg");
         
         
         </div>
+        
+        
+        <div class="form-group" >
+        <select class="form-control" style="width:400px" name="posttype">
+        <option selected disabled>---Select Post Type---</option>
+        
+        
+        <option value="Public">Public</option>
+    <option value="Private">Private</option>
+      
+        
+        </select>
+        
+        
+        </div>
         <div class="form-group">
         <input type="text" name="posttitle" onfocus="this.value=''" placeholder="Enter Post Title" class="form-control" style="width: 400px"/>
  

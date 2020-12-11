@@ -25,11 +25,7 @@ public class LikeServlet extends HttpServlet {
         int uid = Integer.parseInt(request.getParameter("uid"));
         int pid = Integer.parseInt(request.getParameter("pid"));
         
-        
-//        out.println("data from server");
-//        out.println(operation);
-//        out.println(uid);
-//        out.println(pid);
+
         likedao Ldao = new likedao(ConnectionProvider.getConnection());
         
         

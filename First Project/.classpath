@@ -15,5 +15,10 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/sarim.aqeel/Desktop/mysql-connector-java-8.0.20/mysql-connector-java-8.0.20.jar"/>
+	<classpathentry kind="lib" path="E:/Users/sarim.aqeel/lib/servlet-api.jar" sourcepath="">
+		<attributes>
+			<attribute name="javadoc_location" value="https://docs.oracle.com/javaee/3/api/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

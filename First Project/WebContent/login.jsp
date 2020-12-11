@@ -20,7 +20,7 @@ background-color: #ab47bc;
 <div id="loginpage">
 <%@include file="normal_navbar.jsp"  %>
 <main class="d-flex align-items-center" id="pagebg" >
-<div class="container mt-3">
+<div class="container mt-4">
 <div class="row">
 <div class="col-md-4 offset-md-4 mt-3">
 <div class="card">

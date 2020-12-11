@@ -96,70 +96,7 @@ public class VerifyCodeServlet extends HttpServlet {
         
          
          
-         
-         /*
-         String gender=request.getParameter("user_gender");
-         String check=request.getParameter("check");
- 		if(check==null) {
- 		out.println("check");
- 		
- 		}
- 		
- 		else if(gender==null) {
- 			out.println("gender");
- 			
- 		}	
- 		else {
- 		
- 		
-
-			 String name=request.getParameter("user_name");
- 			System.out.println("Name is "+name);
- 		    		
- 			String password=request.getParameter("user_password");
- 			String mobile=request.getParameter("user_mobile");
- 			String email=request.getParameter("user_email");
- 			String about=request.getParameter("about");
- 		
- 			 
- 		
- 			
- 			
- 			HttpSession session = request.getSession();
- 		
-			
- 			session.setAttribute("name",name);
- 			session.setAttribute("email",email);
- 			session.setAttribute("password",password);
- 			session.setAttribute("mobile",mobile);
- 			session.setAttribute("gender",gender);
- 			session.setAttribute("about",about);
-			
-			
-		
- 			
- 			 
- 			 System.out.println(email);
- 			sendemail snd = new sendemail();
- 			String code = snd.getRandom();
- 			System.out.println(code);
- 			verification ver = new verification(email, code);
- 			boolean ans= snd.sendEmail(ver);
- 			
- 			if(ans) {
- 				System.out.println(ans);
- 				out.println("done");
- 				HttpSession session2 = request.getSession();
- 				session2.setAttribute("auth", ver);
- 				response.sendRedirect("Verificationjsp.jsp");
- 				
- 			}
- 			
-			
-			
-		}
-		
-		*/
+       
 		
 	}
 	

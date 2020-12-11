@@ -46,9 +46,7 @@ public class AddPostServlet extends HttpServlet {
         user.getId();
         
         
-//        out.println("Your post title is "+ pTitle);
-//        out.println(picName);
-        
+
         post post=new post(pTitle, pContent, pCode, picName, null, CID, user.getId(), pType);
         
        
@@ -69,40 +67,6 @@ public class AddPostServlet extends HttpServlet {
 
 
 
-protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	response.setContentType("text/html");
-    PrintWriter out = response.getWriter();
-    
-    int CID = Integer.parseInt(request.getParameter("cid"));
-    String pType = request.getParameter("posttype");
-    String pTitle=request.getParameter("posttitle");
-    String pContent =request.getParameter("postcontent");
-    String pCode = request.getParameter("postcode");
-    Part part = request.getPart("postpic");
-    String picName= part.getSubmittedFileName();
-    
-//    getting user
-    HttpSession session = request.getSession();
-    users user = (users)session.getAttribute("currentuser");
-    user.getId();
-    
-    
-//    out.println("Your post title is "+ pTitle);
-//    out.println(picName);
-    
-    post post=new post(pTitle, pContent, pCode, picName, null, CID, user.getId(), pType);
-    postdao pdao = new postdao(ConnectionProvider.getConnection());
-    if(pdao.savepost(post)) {
-    	
-    	String path = request.getRealPath("/")+ "blog_pics"+ File.separator + part.getSubmittedFileName();
-    	Helper.saveFile(part.getInputStream(), path);
-    	out.println("done");
-    	
-    }
-    else {
-    	out.println("error");
-    }
-}
 
 }
 

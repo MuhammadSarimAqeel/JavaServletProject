@@ -45,38 +45,7 @@ public class CategoryServlet extends HttpServlet {
         	
         }
 			
-       /*  
-		String check=request.getParameter("check");
-		if(check==null) {
-		out.println("You must agree terms and conditions");
-		
-		}
-		else {
-			
-			
-			String name=request.getParameter("user_name");
-			System.out.println("Name is "+name);
-			String email=request.getParameter("user_email");
-			String password=request.getParameter("user_password");
-			String mobile=request.getParameter("user_mobile");
-			String gender=request.getParameter("user_gender");
-			String about=request.getParameter("about");
-			
-			users newuser= new users(name,email,password,mobile, gender,about);
-			
-		
-			
-			usersdao dao =new usersdao(ConnectionProvider.getConnection());
-			if(dao.saveuser(newuser)) {
-				
-				out.println("done");
-			}
-			else {
-				
-				out.println("Something Went Wrong On Server");
-			}
-			
-		}*/
+     
 		
 		
 	}

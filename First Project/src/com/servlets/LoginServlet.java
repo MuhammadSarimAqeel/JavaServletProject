@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
          users u = dao.getUserByEmailAndPassword(useremail, userpassword);
          
         if(u==null) {
-//        	out.println("Invalid Email Or Password");
+
         	messege msg = new messege("Invalid Email or Password", "error", "alert-danger");
         	HttpSession s= request.getSession();
         	s.setAttribute("msg", msg);
@@ -59,7 +59,7 @@ public class LoginServlet extends HttpServlet {
              users u = dao.getUserByEmailAndPassword(useremail, userpassword);
              
             if(u==null) {
-//            	out.println("Invalid Email Or Password");
+
             	messege msg = new messege("Invalid Email or Password", "error", "alert-danger");
             	HttpSession s= request.getSession();
             	s.setAttribute("msg", msg);

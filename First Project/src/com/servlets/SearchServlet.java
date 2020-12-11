@@ -35,14 +35,14 @@ public class SearchServlet extends HttpServlet {
         if(list==null) {
         	
         	out.println("<h1> This post doesn`t exist</h1>");
-//        	response.sendRedirect("index.jsp");	
+;	
         
         }
         else {
         	String url = "/searchpost.jsp";
         RequestDispatcher rd = request.getRequestDispatcher(url);
         rd.forward(request, response);
-//        	response.sendRedirect("searchpost.jsp");
+
         	
         }
         
